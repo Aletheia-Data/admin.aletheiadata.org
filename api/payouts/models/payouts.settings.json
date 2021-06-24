@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "payouts",
+  "info": {
+    "name": "Payouts"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "paypal_email": {
+      "type": "email"
+    },
+    "artist": {
+      "via": "payouts",
+      "model": "artist"
+    }
+  }
+}
