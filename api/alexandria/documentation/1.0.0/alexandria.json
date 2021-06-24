@@ -517,21 +517,21 @@
       "Alexandria": {
         "required": [
           "id",
-          "Title",
-          "Description",
-          "File"
+          "title",
+          "description",
+          "file"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "Title": {
+          "title": {
             "type": "string"
           },
-          "Description": {
+          "description": {
             "type": "string"
           },
-          "File": {
+          "file": {
             "required": [
               "id",
               "name",
@@ -598,10 +598,10 @@
               }
             }
           },
-          "Source_URL": {
+          "source_url": {
             "type": "string"
           },
-          "Source": {
+          "source": {
             "required": [
               "id"
             ],
@@ -632,10 +632,10 @@
               }
             }
           },
-          "CID": {
+          "cid": {
             "type": "string"
           },
-          "Status": {
+          "status": {
             "type": "string",
             "default": "under_review",
             "enum": [
@@ -652,26 +652,26 @@
       },
       "NewAlexandria": {
         "required": [
-          "Title",
-          "Description"
+          "title",
+          "description"
         ],
         "properties": {
-          "Title": {
+          "title": {
             "type": "string"
           },
-          "Description": {
+          "description": {
             "type": "string"
           },
-          "Source_URL": {
+          "source_url": {
             "type": "string"
           },
-          "Source": {
+          "source": {
             "type": "string"
           },
-          "CID": {
+          "cid": {
             "type": "string"
           },
-          "Status": {
+          "status": {
             "type": "string",
             "default": "under_review",
             "enum": [

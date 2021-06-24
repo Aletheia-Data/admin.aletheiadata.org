@@ -12,16 +12,16 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string"
     },
-    "Desciption": {
+    "desciption": {
       "type": "text"
     },
-    "Website": {
+    "website": {
       "type": "string"
     },
-    "Cover": {
+    "cover": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -33,7 +33,7 @@
       "required": false,
       "pluginOptions": {}
     },
-    "Icon": {
+    "icon": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -45,9 +45,9 @@
       "required": false,
       "pluginOptions": {}
     },
-    "Aletheias": {
-      "collection": "aletheia",
-      "via": "Department"
+    "aletheias": {
+      "via": "department",
+      "collection": "aletheia"
     }
   }
 }

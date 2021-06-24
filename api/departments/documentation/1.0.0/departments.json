@@ -522,16 +522,16 @@
           "id": {
             "type": "string"
           },
-          "Name": {
+          "name": {
             "type": "string"
           },
-          "Desciption": {
+          "desciption": {
             "type": "string"
           },
-          "Website": {
+          "website": {
             "type": "string"
           },
-          "Cover": {
+          "cover": {
             "required": [
               "id",
               "name",
@@ -598,7 +598,7 @@
               }
             }
           },
-          "Icon": {
+          "icon": {
             "required": [
               "id",
               "name",
@@ -665,28 +665,25 @@
               }
             }
           },
-          "Aletheias": {
+          "aletheias": {
             "type": "array",
             "items": {
               "required": [
                 "id",
-                "Title",
-                "Description"
+                "title",
+                "description"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "Title": {
+                "title": {
                   "type": "string"
                 },
-                "Description": {
+                "description": {
                   "type": "string"
                 },
-                "Year": {
-                  "type": "component"
-                },
-                "Status": {
+                "status": {
                   "type": "string",
                   "enum": [
                     "under_review",
@@ -694,7 +691,13 @@
                     "blocked"
                   ]
                 },
-                "Department": {
+                "department": {
+                  "type": "string"
+                },
+                "start_date": {
+                  "type": "string"
+                },
+                "end_date": {
                   "type": "string"
                 },
                 "published_at": {
@@ -717,16 +720,16 @@
       },
       "NewDepartments": {
         "properties": {
-          "Name": {
+          "name": {
             "type": "string"
           },
-          "Desciption": {
+          "desciption": {
             "type": "string"
           },
-          "Website": {
+          "website": {
             "type": "string"
           },
-          "Aletheias": {
+          "aletheias": {
             "type": "array",
             "items": {
               "type": "string"

@@ -533,33 +533,33 @@
             "items": {
               "required": [
                 "id",
-                "Title",
-                "Description",
-                "File"
+                "title",
+                "description",
+                "file"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "Title": {
+                "title": {
                   "type": "string"
                 },
-                "Description": {
+                "description": {
                   "type": "string"
                 },
-                "File": {
+                "file": {
                   "type": "string"
                 },
-                "Source_URL": {
+                "source_url": {
                   "type": "string"
                 },
-                "Source": {
+                "source": {
                   "type": "string"
                 },
-                "CID": {
+                "cid": {
                   "type": "string"
                 },
-                "Status": {
+                "status": {
                   "type": "string",
                   "enum": [
                     "under_review",

@@ -12,21 +12,15 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string",
       "required": true
     },
-    "Description": {
+    "description": {
       "type": "text",
       "required": true
     },
-    "Year": {
-      "type": "component",
-      "repeatable": false,
-      "component": "settings.years",
-      "required": false
-    },
-    "Status": {
+    "status": {
       "type": "enumeration",
       "enum": [
         "under_review",
@@ -35,9 +29,15 @@
       ],
       "default": "under_review"
     },
-    "Department": {
-      "via": "Aletheias",
+    "department": {
+      "via": "aletheias",
       "model": "departments"
+    },
+    "start_date": {
+      "type": "date"
+    },
+    "end_date": {
+      "type": "date"
     }
   }
 }

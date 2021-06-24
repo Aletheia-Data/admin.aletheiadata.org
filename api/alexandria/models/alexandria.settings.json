@@ -12,15 +12,15 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string",
       "required": true
     },
-    "Description": {
+    "description": {
       "type": "text",
       "required": true
     },
-    "File": {
+    "file": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -32,17 +32,17 @@
       "required": true,
       "pluginOptions": {}
     },
-    "Source_URL": {
+    "source_url": {
       "type": "string"
     },
-    "Source": {
+    "source": {
       "model": "sources",
       "via": "alexandrias"
     },
-    "CID": {
+    "cid": {
       "type": "string"
     },
-    "Status": {
+    "status": {
       "type": "enumeration",
       "enum": [
         "under_review",

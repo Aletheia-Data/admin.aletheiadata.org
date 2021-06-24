@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/24/2021 8:15:45 PM"
+    "x-generation-date": "06/24/2021 8:43:34 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4321,38 +4321,20 @@
       "Aletheia": {
         "required": [
           "id",
-          "Title",
-          "Description"
+          "title",
+          "description"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "Title": {
+          "title": {
             "type": "string"
           },
-          "Description": {
+          "description": {
             "type": "string"
           },
-          "Year": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "Year": {
-                "type": "string",
-                "enum": [
-                  "year_2020",
-                  "year_2021"
-                ]
-              }
-            }
-          },
-          "Status": {
+          "status": {
             "type": "string",
             "default": "under_review",
             "enum": [
@@ -4361,7 +4343,7 @@
               "blocked"
             ]
           },
-          "Department": {
+          "department": {
             "required": [
               "id"
             ],
@@ -4369,22 +4351,22 @@
               "id": {
                 "type": "string"
               },
-              "Name": {
+              "name": {
                 "type": "string"
               },
-              "Desciption": {
+              "desciption": {
                 "type": "string"
               },
-              "Website": {
+              "website": {
                 "type": "string"
               },
-              "Cover": {
+              "cover": {
                 "type": "string"
               },
-              "Icon": {
+              "icon": {
                 "type": "string"
               },
-              "Aletheias": {
+              "aletheias": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -4401,6 +4383,14 @@
               }
             }
           },
+          "start_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "end_date": {
+            "type": "string",
+            "format": "date"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -4409,35 +4399,17 @@
       },
       "NewAletheia": {
         "required": [
-          "Title",
-          "Description"
+          "title",
+          "description"
         ],
         "properties": {
-          "Title": {
+          "title": {
             "type": "string"
           },
-          "Description": {
+          "description": {
             "type": "string"
           },
-          "Year": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "Year": {
-                "type": "string",
-                "enum": [
-                  "year_2020",
-                  "year_2021"
-                ]
-              }
-            }
-          },
-          "Status": {
+          "status": {
             "type": "string",
             "default": "under_review",
             "enum": [
@@ -4446,8 +4418,16 @@
               "blocked"
             ]
           },
-          "Department": {
+          "department": {
             "type": "string"
+          },
+          "start_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "end_date": {
+            "type": "string",
+            "format": "date"
           },
           "published_at": {
             "type": "string",
@@ -4464,21 +4444,21 @@
       "Alexandria": {
         "required": [
           "id",
-          "Title",
-          "Description",
-          "File"
+          "title",
+          "description",
+          "file"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "Title": {
+          "title": {
             "type": "string"
           },
-          "Description": {
+          "description": {
             "type": "string"
           },
-          "File": {
+          "file": {
             "required": [
               "id",
               "name",
@@ -4545,10 +4525,10 @@
               }
             }
           },
-          "Source_URL": {
+          "source_url": {
             "type": "string"
           },
-          "Source": {
+          "source": {
             "required": [
               "id"
             ],
@@ -4579,10 +4559,10 @@
               }
             }
           },
-          "CID": {
+          "cid": {
             "type": "string"
           },
-          "Status": {
+          "status": {
             "type": "string",
             "default": "under_review",
             "enum": [
@@ -4599,26 +4579,26 @@
       },
       "NewAlexandria": {
         "required": [
-          "Title",
-          "Description"
+          "title",
+          "description"
         ],
         "properties": {
-          "Title": {
+          "title": {
             "type": "string"
           },
-          "Description": {
+          "description": {
             "type": "string"
           },
-          "Source_URL": {
+          "source_url": {
             "type": "string"
           },
-          "Source": {
+          "source": {
             "type": "string"
           },
-          "CID": {
+          "cid": {
             "type": "string"
           },
-          "Status": {
+          "status": {
             "type": "string",
             "default": "under_review",
             "enum": [
@@ -4647,16 +4627,16 @@
           "id": {
             "type": "string"
           },
-          "Name": {
+          "name": {
             "type": "string"
           },
-          "Desciption": {
+          "desciption": {
             "type": "string"
           },
-          "Website": {
+          "website": {
             "type": "string"
           },
-          "Cover": {
+          "cover": {
             "required": [
               "id",
               "name",
@@ -4723,7 +4703,7 @@
               }
             }
           },
-          "Icon": {
+          "icon": {
             "required": [
               "id",
               "name",
@@ -4790,28 +4770,25 @@
               }
             }
           },
-          "Aletheias": {
+          "aletheias": {
             "type": "array",
             "items": {
               "required": [
                 "id",
-                "Title",
-                "Description"
+                "title",
+                "description"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "Title": {
+                "title": {
                   "type": "string"
                 },
-                "Description": {
+                "description": {
                   "type": "string"
                 },
-                "Year": {
-                  "type": "component"
-                },
-                "Status": {
+                "status": {
                   "type": "string",
                   "enum": [
                     "under_review",
@@ -4819,7 +4796,13 @@
                     "blocked"
                   ]
                 },
-                "Department": {
+                "department": {
+                  "type": "string"
+                },
+                "start_date": {
+                  "type": "string"
+                },
+                "end_date": {
                   "type": "string"
                 },
                 "published_at": {
@@ -4842,16 +4825,16 @@
       },
       "NewDepartments": {
         "properties": {
-          "Name": {
+          "name": {
             "type": "string"
           },
-          "Desciption": {
+          "desciption": {
             "type": "string"
           },
-          "Website": {
+          "website": {
             "type": "string"
           },
-          "Aletheias": {
+          "aletheias": {
             "type": "array",
             "items": {
               "type": "string"
@@ -4888,33 +4871,33 @@
             "items": {
               "required": [
                 "id",
-                "Title",
-                "Description",
-                "File"
+                "title",
+                "description",
+                "file"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "Title": {
+                "title": {
                   "type": "string"
                 },
-                "Description": {
+                "description": {
                   "type": "string"
                 },
-                "File": {
+                "file": {
                   "type": "string"
                 },
-                "Source_URL": {
+                "source_url": {
                   "type": "string"
                 },
-                "Source": {
+                "source": {
                   "type": "string"
                 },
-                "CID": {
+                "cid": {
                   "type": "string"
                 },
-                "Status": {
+                "status": {
                   "type": "string",
                   "enum": [
                     "under_review",
