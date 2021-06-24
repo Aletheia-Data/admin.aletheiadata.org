@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/16/2021 4:53:39 PM"
+    "x-generation-date": "06/24/2021 8:15:45 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -45,7 +45,7 @@
     }
   ],
   "paths": {
-    "/artists": {
+    "/aletheias": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -57,7 +57,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Artist"
+                    "$ref": "#/components/schemas/Aletheia"
                   }
                 }
               }
@@ -96,7 +96,7 @@
         },
         "summary": "",
         "tags": [
-          "Artist"
+          "Aletheia"
         ],
         "parameters": [
           {
@@ -246,7 +246,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Artist"
+                  "$ref": "#/components/schemas/Aletheia"
                 }
               }
             }
@@ -284,7 +284,7 @@
         },
         "summary": "",
         "tags": [
-          "Artist"
+          "Aletheia"
         ],
         "requestBody": {
           "description": "",
@@ -292,14 +292,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewArtist"
+                "$ref": "#/components/schemas/NewAletheia"
               }
             }
           }
         }
       }
     },
-    "/artists/count": {
+    "/aletheias/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -351,12 +351,12 @@
         },
         "summary": "",
         "tags": [
-          "Artist"
+          "Aletheia"
         ],
         "parameters": []
       }
     },
-    "/artists/{id}": {
+    "/aletheias/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -366,7 +366,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Artist"
+                  "$ref": "#/components/schemas/Aletheia"
                 }
               }
             }
@@ -404,7 +404,7 @@
         },
         "summary": "",
         "tags": [
-          "Artist"
+          "Aletheia"
         ],
         "parameters": [
           {
@@ -428,7 +428,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Artist"
+                  "$ref": "#/components/schemas/Aletheia"
                 }
               }
             }
@@ -466,7 +466,7 @@
         },
         "summary": "",
         "tags": [
-          "Artist"
+          "Aletheia"
         ],
         "requestBody": {
           "description": "",
@@ -474,7 +474,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewArtist"
+                "$ref": "#/components/schemas/NewAletheia"
               }
             }
           }
@@ -540,7 +540,7 @@
         },
         "summary": "",
         "tags": [
-          "Artist"
+          "Aletheia"
         ],
         "parameters": [
           {
@@ -556,19 +556,19 @@
         ]
       }
     },
-    "/categories": {
+    "/alexandrias": {
       "get": {
         "deprecated": false,
-        "description": "Find all the categories's records",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve categories document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Categories"
+                    "$ref": "#/components/schemas/Alexandria"
                   }
                 }
               }
@@ -607,7 +607,7 @@
         },
         "summary": "",
         "tags": [
-          "Categories"
+          "Alexandria"
         ],
         "parameters": [
           {
@@ -750,14 +750,14 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new categories record",
+        "description": "Create a new record",
         "responses": {
           "200": {
-            "description": "Retrieve categories document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Categories"
+                  "$ref": "#/components/schemas/Alexandria"
                 }
               }
             }
@@ -795,7 +795,7 @@
         },
         "summary": "",
         "tags": [
-          "Categories"
+          "Alexandria"
         ],
         "requestBody": {
           "description": "",
@@ -803,20 +803,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewCategories"
+                "$ref": "#/components/schemas/NewAlexandria"
               }
             }
           }
         }
       }
     },
-    "/categories/count": {
+    "/alexandrias/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the numver of categories documents",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve categories document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -862,22 +862,22 @@
         },
         "summary": "",
         "tags": [
-          "Categories"
+          "Alexandria"
         ],
         "parameters": []
       }
     },
-    "/categories/{id}": {
+    "/alexandrias/{id}": {
       "get": {
         "deprecated": false,
-        "description": "Find one categories record",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve categories document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Categories"
+                  "$ref": "#/components/schemas/Alexandria"
                 }
               }
             }
@@ -915,7 +915,7 @@
         },
         "summary": "",
         "tags": [
-          "Categories"
+          "Alexandria"
         ],
         "parameters": [
           {
@@ -932,14 +932,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single categories record",
+        "description": "Update a record",
         "responses": {
           "200": {
-            "description": "Retrieve categories document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Categories"
+                  "$ref": "#/components/schemas/Alexandria"
                 }
               }
             }
@@ -977,7 +977,7 @@
         },
         "summary": "",
         "tags": [
-          "Categories"
+          "Alexandria"
         ],
         "requestBody": {
           "description": "",
@@ -985,7 +985,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewCategories"
+                "$ref": "#/components/schemas/NewAlexandria"
               }
             }
           }
@@ -1005,10 +1005,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single categories record",
+        "description": "Delete a record",
         "responses": {
           "200": {
-            "description": "deletes a single categories based on the ID supplied",
+            "description": "deletes a single record based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -1051,7 +1051,7 @@
         },
         "summary": "",
         "tags": [
-          "Categories"
+          "Alexandria"
         ],
         "parameters": [
           {
@@ -1067,19 +1067,19 @@
         ]
       }
     },
-    "/items": {
+    "/departments": {
       "get": {
         "deprecated": false,
-        "description": "Find all the items's records",
+        "description": "Find all the departments's records",
         "responses": {
           "200": {
-            "description": "Retrieve items document(s)",
+            "description": "Retrieve departments document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Items"
+                    "$ref": "#/components/schemas/Departments"
                   }
                 }
               }
@@ -1118,7 +1118,7 @@
         },
         "summary": "",
         "tags": [
-          "Items"
+          "Departments"
         ],
         "parameters": [
           {
@@ -1261,14 +1261,14 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new items record",
+        "description": "Create a new departments record",
         "responses": {
           "200": {
-            "description": "Retrieve items document(s)",
+            "description": "Retrieve departments document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Items"
+                  "$ref": "#/components/schemas/Departments"
                 }
               }
             }
@@ -1306,7 +1306,7 @@
         },
         "summary": "",
         "tags": [
-          "Items"
+          "Departments"
         ],
         "requestBody": {
           "description": "",
@@ -1314,20 +1314,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewItems"
+                "$ref": "#/components/schemas/NewDepartments"
               }
             }
           }
         }
       }
     },
-    "/items/count": {
+    "/departments/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the numver of items documents",
+        "description": "Retrieve the numver of departments documents",
         "responses": {
           "200": {
-            "description": "Retrieve items document(s)",
+            "description": "Retrieve departments document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -1373,22 +1373,22 @@
         },
         "summary": "",
         "tags": [
-          "Items"
+          "Departments"
         ],
         "parameters": []
       }
     },
-    "/items/{id}": {
+    "/departments/{id}": {
       "get": {
         "deprecated": false,
-        "description": "Find one items record",
+        "description": "Find one departments record",
         "responses": {
           "200": {
-            "description": "Retrieve items document(s)",
+            "description": "Retrieve departments document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Items"
+                  "$ref": "#/components/schemas/Departments"
                 }
               }
             }
@@ -1426,7 +1426,7 @@
         },
         "summary": "",
         "tags": [
-          "Items"
+          "Departments"
         ],
         "parameters": [
           {
@@ -1443,14 +1443,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single items record",
+        "description": "Update a single departments record",
         "responses": {
           "200": {
-            "description": "Retrieve items document(s)",
+            "description": "Retrieve departments document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Items"
+                  "$ref": "#/components/schemas/Departments"
                 }
               }
             }
@@ -1488,7 +1488,7 @@
         },
         "summary": "",
         "tags": [
-          "Items"
+          "Departments"
         ],
         "requestBody": {
           "description": "",
@@ -1496,7 +1496,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewItems"
+                "$ref": "#/components/schemas/NewDepartments"
               }
             }
           }
@@ -1516,10 +1516,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single items record",
+        "description": "Delete a single departments record",
         "responses": {
           "200": {
-            "description": "deletes a single items based on the ID supplied",
+            "description": "deletes a single departments based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -1562,7 +1562,7 @@
         },
         "summary": "",
         "tags": [
-          "Items"
+          "Departments"
         ],
         "parameters": [
           {
@@ -1578,543 +1578,19 @@
         ]
       }
     },
-    "/nf-ts": {
+    "/sources": {
       "get": {
         "deprecated": false,
-        "description": "Find all the nf-ts's records",
+        "description": "Find all the sources's records",
         "responses": {
           "200": {
-            "description": "Retrieve nf-ts document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Nf-ts"
-        ],
-        "parameters": [
-          {
-            "name": "_limit",
-            "in": "query",
-            "required": false,
-            "description": "Maximum number of results possible",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_sort",
-            "in": "query",
-            "required": false,
-            "description": "Sort according to a specific field.",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_start",
-            "in": "query",
-            "required": false,
-            "description": "Skip a specific number of entries (especially useful for pagination)",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "=",
-            "in": "query",
-            "required": false,
-            "description": "Get entries that matches exactly your input",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_ne",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are not equals to something",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lt",
-            "in": "query",
-            "required": false,
-            "description": "Get record that are lower than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are lower than or equal to a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gt",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than  or equal a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_contains",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_containss",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains (case sensitive) a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_in",
-            "in": "query",
-            "required": false,
-            "description": "Get records that matches any value in the array of values",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_nin",
-            "in": "query",
-            "required": false,
-            "description": "Get records that doesn't match any value in the array of values",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "deprecated": false
-          }
-        ]
-      },
-      "post": {
-        "deprecated": false,
-        "description": "Create a new nf-ts record",
-        "responses": {
-          "200": {
-            "description": "Retrieve nf-ts document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Nf-ts"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewNf-ts"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/nf-ts/count": {
-      "get": {
-        "deprecated": false,
-        "description": "Retrieve the numver of nf-ts documents",
-        "responses": {
-          "200": {
-            "description": "Retrieve nf-ts document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Nf-ts"
-        ],
-        "parameters": []
-      }
-    },
-    "/nf-ts/{id}": {
-      "get": {
-        "deprecated": false,
-        "description": "Find one nf-ts record",
-        "responses": {
-          "200": {
-            "description": "Retrieve nf-ts document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Nf-ts"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "put": {
-        "deprecated": false,
-        "description": "Update a single nf-ts record",
-        "responses": {
-          "200": {
-            "description": "Retrieve nf-ts document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Nf-ts"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewNf-ts"
-              }
-            }
-          }
-        },
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "delete": {
-        "deprecated": false,
-        "description": "Delete a single nf-ts record",
-        "responses": {
-          "200": {
-            "description": "deletes a single nf-ts based on the ID supplied",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "integer",
-                  "format": "int64"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Nf-ts"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      }
-    },
-    "/payouts": {
-      "get": {
-        "deprecated": false,
-        "description": "Find all the payouts's records",
-        "responses": {
-          "200": {
-            "description": "Retrieve payouts document(s)",
+            "description": "Retrieve sources document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Payouts"
+                    "$ref": "#/components/schemas/Sources"
                   }
                 }
               }
@@ -2153,7 +1629,7 @@
         },
         "summary": "",
         "tags": [
-          "Payouts"
+          "Sources"
         ],
         "parameters": [
           {
@@ -2296,14 +1772,14 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new payouts record",
+        "description": "Create a new sources record",
         "responses": {
           "200": {
-            "description": "Retrieve payouts document(s)",
+            "description": "Retrieve sources document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Payouts"
+                  "$ref": "#/components/schemas/Sources"
                 }
               }
             }
@@ -2341,7 +1817,7 @@
         },
         "summary": "",
         "tags": [
-          "Payouts"
+          "Sources"
         ],
         "requestBody": {
           "description": "",
@@ -2349,20 +1825,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewPayouts"
+                "$ref": "#/components/schemas/NewSources"
               }
             }
           }
         }
       }
     },
-    "/payouts/count": {
+    "/sources/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the numver of payouts documents",
+        "description": "Retrieve the numver of sources documents",
         "responses": {
           "200": {
-            "description": "Retrieve payouts document(s)",
+            "description": "Retrieve sources document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -2408,22 +1884,22 @@
         },
         "summary": "",
         "tags": [
-          "Payouts"
+          "Sources"
         ],
         "parameters": []
       }
     },
-    "/payouts/{id}": {
+    "/sources/{id}": {
       "get": {
         "deprecated": false,
-        "description": "Find one payouts record",
+        "description": "Find one sources record",
         "responses": {
           "200": {
-            "description": "Retrieve payouts document(s)",
+            "description": "Retrieve sources document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Payouts"
+                  "$ref": "#/components/schemas/Sources"
                 }
               }
             }
@@ -2461,7 +1937,7 @@
         },
         "summary": "",
         "tags": [
-          "Payouts"
+          "Sources"
         ],
         "parameters": [
           {
@@ -2478,14 +1954,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single payouts record",
+        "description": "Update a single sources record",
         "responses": {
           "200": {
-            "description": "Retrieve payouts document(s)",
+            "description": "Retrieve sources document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Payouts"
+                  "$ref": "#/components/schemas/Sources"
                 }
               }
             }
@@ -2523,7 +1999,7 @@
         },
         "summary": "",
         "tags": [
-          "Payouts"
+          "Sources"
         ],
         "requestBody": {
           "description": "",
@@ -2531,7 +2007,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewPayouts"
+                "$ref": "#/components/schemas/NewSources"
               }
             }
           }
@@ -2551,10 +2027,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single payouts record",
+        "description": "Delete a single sources record",
         "responses": {
           "200": {
-            "description": "deletes a single payouts based on the ID supplied",
+            "description": "deletes a single sources based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -2597,1042 +2073,7 @@
         },
         "summary": "",
         "tags": [
-          "Payouts"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      }
-    },
-    "/sale-methods": {
-      "get": {
-        "deprecated": false,
-        "description": "Find all the sale-methods's records",
-        "responses": {
-          "200": {
-            "description": "Retrieve sale-methods document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Sale-methods"
-        ],
-        "parameters": [
-          {
-            "name": "_limit",
-            "in": "query",
-            "required": false,
-            "description": "Maximum number of results possible",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_sort",
-            "in": "query",
-            "required": false,
-            "description": "Sort according to a specific field.",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_start",
-            "in": "query",
-            "required": false,
-            "description": "Skip a specific number of entries (especially useful for pagination)",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "=",
-            "in": "query",
-            "required": false,
-            "description": "Get entries that matches exactly your input",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_ne",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are not equals to something",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lt",
-            "in": "query",
-            "required": false,
-            "description": "Get record that are lower than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are lower than or equal to a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gt",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than  or equal a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_contains",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_containss",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains (case sensitive) a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_in",
-            "in": "query",
-            "required": false,
-            "description": "Get records that matches any value in the array of values",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_nin",
-            "in": "query",
-            "required": false,
-            "description": "Get records that doesn't match any value in the array of values",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "deprecated": false
-          }
-        ]
-      },
-      "post": {
-        "deprecated": false,
-        "description": "Create a new sale-methods record",
-        "responses": {
-          "200": {
-            "description": "Retrieve sale-methods document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Sale-methods"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewSale-methods"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/sale-methods/count": {
-      "get": {
-        "deprecated": false,
-        "description": "Retrieve the numver of sale-methods documents",
-        "responses": {
-          "200": {
-            "description": "Retrieve sale-methods document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Sale-methods"
-        ],
-        "parameters": []
-      }
-    },
-    "/sale-methods/{id}": {
-      "get": {
-        "deprecated": false,
-        "description": "Find one sale-methods record",
-        "responses": {
-          "200": {
-            "description": "Retrieve sale-methods document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Sale-methods"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "put": {
-        "deprecated": false,
-        "description": "Update a single sale-methods record",
-        "responses": {
-          "200": {
-            "description": "Retrieve sale-methods document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Sale-methods"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewSale-methods"
-              }
-            }
-          }
-        },
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "delete": {
-        "deprecated": false,
-        "description": "Delete a single sale-methods record",
-        "responses": {
-          "200": {
-            "description": "deletes a single sale-methods based on the ID supplied",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "integer",
-                  "format": "int64"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Sale-methods"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      }
-    },
-    "/types": {
-      "get": {
-        "deprecated": false,
-        "description": "Find all the types's records",
-        "responses": {
-          "200": {
-            "description": "Retrieve types document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Types"
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Types"
-        ],
-        "parameters": [
-          {
-            "name": "_limit",
-            "in": "query",
-            "required": false,
-            "description": "Maximum number of results possible",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_sort",
-            "in": "query",
-            "required": false,
-            "description": "Sort according to a specific field.",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_start",
-            "in": "query",
-            "required": false,
-            "description": "Skip a specific number of entries (especially useful for pagination)",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "=",
-            "in": "query",
-            "required": false,
-            "description": "Get entries that matches exactly your input",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_ne",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are not equals to something",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lt",
-            "in": "query",
-            "required": false,
-            "description": "Get record that are lower than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are lower than or equal to a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gt",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than  or equal a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_contains",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_containss",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains (case sensitive) a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_in",
-            "in": "query",
-            "required": false,
-            "description": "Get records that matches any value in the array of values",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_nin",
-            "in": "query",
-            "required": false,
-            "description": "Get records that doesn't match any value in the array of values",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "deprecated": false
-          }
-        ]
-      },
-      "post": {
-        "deprecated": false,
-        "description": "Create a new types record",
-        "responses": {
-          "200": {
-            "description": "Retrieve types document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Types"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Types"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewTypes"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/types/count": {
-      "get": {
-        "deprecated": false,
-        "description": "Retrieve the numver of types documents",
-        "responses": {
-          "200": {
-            "description": "Retrieve types document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "count": {
-                      "type": "integer"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Types"
-        ],
-        "parameters": []
-      }
-    },
-    "/types/{id}": {
-      "get": {
-        "deprecated": false,
-        "description": "Find one types record",
-        "responses": {
-          "200": {
-            "description": "Retrieve types document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Types"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Types"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "put": {
-        "deprecated": false,
-        "description": "Update a single types record",
-        "responses": {
-          "200": {
-            "description": "Retrieve types document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Types"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Types"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewTypes"
-              }
-            }
-          }
-        },
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "delete": {
-        "deprecated": false,
-        "description": "Delete a single types record",
-        "responses": {
-          "200": {
-            "description": "deletes a single types based on the ID supplied",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "integer",
-                  "format": "int64"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Types"
+          "Sources"
         ],
         "parameters": [
           {
@@ -5877,638 +4318,77 @@
   },
   "components": {
     "schemas": {
-      "Artist": {
-        "required": [
-          "id"
-        ],
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          },
-          "surname": {
-            "type": "string"
-          },
-          "email": {
-            "type": "string"
-          },
-          "payouts": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "paypal_email": {
-                  "type": "string"
-                },
-                "artist": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "profile": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "alternativeText": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
-          }
-        }
-      },
-      "NewArtist": {
-        "properties": {
-          "name": {
-            "type": "string"
-          },
-          "surname": {
-            "type": "string"
-          },
-          "email": {
-            "type": "string"
-          },
-          "payouts": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "created_by": {
-            "type": "string"
-          },
-          "updated_by": {
-            "type": "string"
-          }
-        }
-      },
-      "Categories": {
+      "Aletheia": {
         "required": [
           "id",
-          "name",
-          "description"
+          "Title",
+          "Description"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "name": {
+          "Title": {
             "type": "string"
           },
-          "description": {
+          "Description": {
             "type": "string"
           },
-          "cover": {
+          "Year": {
+            "type": "object",
             "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
+              "id"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "name": {
-                "type": "string"
-              },
-              "alternativeText": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "item": {
-            "required": [
-              "id",
-              "name",
-              "original_link",
-              "description",
-              "explicit_content",
-              "cover",
-              "file",
-              "stock"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "original_link": {
-                "type": "string"
-              },
-              "description": {
-                "type": "string"
-              },
-              "unlockable_content": {
-                "type": "string"
-              },
-              "explicit_content": {
-                "type": "boolean"
-              },
-              "cover": {
-                "type": "string"
-              },
-              "file": {
-                "type": "string"
-              },
-              "nf_t": {
-                "type": "string"
-              },
-              "status": {
+              "Year": {
                 "type": "string",
                 "enum": [
-                  "under_review",
-                  "pubblished",
-                  "denied"
+                  "year_2020",
+                  "year_2021"
                 ]
-              },
-              "stock": {
-                "type": "integer"
-              },
-              "categories": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "type": {
-                "type": "string"
-              },
-              "artists": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "unlockable": {
-                "type": "boolean"
-              },
-              "price": {
-                "type": "number"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
               }
             }
           },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
-          }
-        }
-      },
-      "NewCategories": {
-        "required": [
-          "name",
-          "description"
-        ],
-        "properties": {
-          "name": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
-          "item": {
-            "type": "string"
-          },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "created_by": {
-            "type": "string"
-          },
-          "updated_by": {
-            "type": "string"
-          }
-        }
-      },
-      "Items": {
-        "required": [
-          "id",
-          "name",
-          "original_link",
-          "description",
-          "explicit_content",
-          "cover",
-          "file",
-          "stock"
-        ],
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          },
-          "original_link": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
-          "unlockable_content": {
-            "type": "string"
-          },
-          "explicit_content": {
-            "type": "boolean",
-            "default": false
-          },
-          "cover": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "alternativeText": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "file": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "alternativeText": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "nf_t": {
-            "required": [
-              "id",
-              "token_id",
-              "url",
-              "provider",
-              "contract_address",
-              "blockchain"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "token_id": {
-                "type": "string"
-              },
-              "url": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string",
-                "enum": [
-                  "OpenSea",
-                  "Mintable",
-                  "Crypto"
-                ]
-              },
-              "contract_address": {
-                "type": "string"
-              },
-              "blockchain": {
-                "type": "string",
-                "enum": [
-                  "Ethereum"
-                ]
-              },
-              "item": {
-                "type": "string"
-              },
-              "certificate": {
-                "type": "string"
-              },
-              "certificate_url": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "status": {
+          "Status": {
             "type": "string",
             "default": "under_review",
             "enum": [
               "under_review",
-              "pubblished",
-              "denied"
+              "approved",
+              "blocked"
             ]
           },
-          "stock": {
-            "type": "integer"
-          },
-          "categories": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "name",
-                "description"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
-                "cover": {
-                  "type": "string"
-                },
-                "item": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "type": {
+          "Department": {
             "required": [
-              "id",
-              "name",
-              "description"
+              "id"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "name": {
+              "Name": {
                 "type": "string"
               },
-              "description": {
+              "Desciption": {
                 "type": "string"
               },
-              "icon": {
+              "Website": {
                 "type": "string"
+              },
+              "Cover": {
+                "type": "string"
+              },
+              "Icon": {
+                "type": "string"
+              },
+              "Aletheias": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "published_at": {
                 "type": "string"
@@ -6521,118 +4401,53 @@
               }
             }
           },
-          "artists": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "surname": {
-                  "type": "string"
-                },
-                "email": {
-                  "type": "string"
-                },
-                "payouts": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "profile": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "unlockable": {
-            "type": "boolean"
-          },
-          "price": {
-            "type": "number"
-          },
           "published_at": {
             "type": "string",
             "format": "date-time"
           }
         }
       },
-      "NewItems": {
+      "NewAletheia": {
         "required": [
-          "name",
-          "original_link",
-          "description",
-          "explicit_content",
-          "stock"
+          "Title",
+          "Description"
         ],
         "properties": {
-          "name": {
+          "Title": {
             "type": "string"
           },
-          "original_link": {
+          "Description": {
             "type": "string"
           },
-          "description": {
-            "type": "string"
+          "Year": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Year": {
+                "type": "string",
+                "enum": [
+                  "year_2020",
+                  "year_2021"
+                ]
+              }
+            }
           },
-          "unlockable_content": {
-            "type": "string"
-          },
-          "explicit_content": {
-            "type": "boolean",
-            "default": false
-          },
-          "nf_t": {
-            "type": "string"
-          },
-          "status": {
+          "Status": {
             "type": "string",
             "default": "under_review",
             "enum": [
               "under_review",
-              "pubblished",
-              "denied"
+              "approved",
+              "blocked"
             ]
           },
-          "stock": {
-            "type": "integer"
-          },
-          "categories": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "type": {
+          "Department": {
             "type": "string"
-          },
-          "artists": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "unlockable": {
-            "type": "boolean"
-          },
-          "price": {
-            "type": "number"
           },
           "published_at": {
             "type": "string",
@@ -6646,127 +4461,24 @@
           }
         }
       },
-      "Nf-ts": {
+      "Alexandria": {
         "required": [
           "id",
-          "token_id",
-          "url",
-          "provider",
-          "contract_address",
-          "blockchain"
+          "Title",
+          "Description",
+          "File"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "token_id": {
+          "Title": {
             "type": "string"
           },
-          "url": {
+          "Description": {
             "type": "string"
           },
-          "provider": {
-            "type": "string",
-            "default": "OpenSea",
-            "enum": [
-              "OpenSea",
-              "Mintable",
-              "Crypto"
-            ]
-          },
-          "contract_address": {
-            "type": "string"
-          },
-          "blockchain": {
-            "type": "string",
-            "default": "Ethereum",
-            "enum": [
-              "Ethereum"
-            ]
-          },
-          "item": {
-            "required": [
-              "id",
-              "name",
-              "original_link",
-              "description",
-              "explicit_content",
-              "cover",
-              "file",
-              "stock"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "original_link": {
-                "type": "string"
-              },
-              "description": {
-                "type": "string"
-              },
-              "unlockable_content": {
-                "type": "string"
-              },
-              "explicit_content": {
-                "type": "boolean"
-              },
-              "cover": {
-                "type": "string"
-              },
-              "file": {
-                "type": "string"
-              },
-              "nf_t": {
-                "type": "string"
-              },
-              "status": {
-                "type": "string",
-                "enum": [
-                  "under_review",
-                  "pubblished",
-                  "denied"
-                ]
-              },
-              "stock": {
-                "type": "integer"
-              },
-              "categories": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "type": {
-                "type": "string"
-              },
-              "artists": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "unlockable": {
-                "type": "boolean"
-              },
-              "price": {
-                "type": "number"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "certificate": {
+          "File": {
             "required": [
               "id",
               "name",
@@ -6833,79 +4545,10 @@
               }
             }
           },
-          "certificate_url": {
+          "Source_URL": {
             "type": "string"
           },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
-          }
-        }
-      },
-      "NewNf-ts": {
-        "required": [
-          "token_id",
-          "url",
-          "provider",
-          "contract_address",
-          "blockchain"
-        ],
-        "properties": {
-          "token_id": {
-            "type": "string"
-          },
-          "url": {
-            "type": "string"
-          },
-          "provider": {
-            "type": "string",
-            "default": "OpenSea",
-            "enum": [
-              "OpenSea",
-              "Mintable",
-              "Crypto"
-            ]
-          },
-          "contract_address": {
-            "type": "string"
-          },
-          "blockchain": {
-            "type": "string",
-            "default": "Ethereum",
-            "enum": [
-              "Ethereum"
-            ]
-          },
-          "item": {
-            "type": "string"
-          },
-          "certificate_url": {
-            "type": "string"
-          },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "created_by": {
-            "type": "string"
-          },
-          "updated_by": {
-            "type": "string"
-          }
-        }
-      },
-      "Payouts": {
-        "required": [
-          "id"
-        ],
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "paypal_email": {
-            "type": "string"
-          },
-          "artist": {
+          "Source": {
             "required": [
               "id"
             ],
@@ -6916,20 +4559,14 @@
               "name": {
                 "type": "string"
               },
-              "surname": {
+              "url": {
                 "type": "string"
               },
-              "email": {
-                "type": "string"
-              },
-              "payouts": {
+              "alexandrias": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
-              },
-              "profile": {
-                "type": "string"
               },
               "published_at": {
                 "type": "string"
@@ -6942,19 +4579,53 @@
               }
             }
           },
+          "CID": {
+            "type": "string"
+          },
+          "Status": {
+            "type": "string",
+            "default": "under_review",
+            "enum": [
+              "under_review",
+              "uploaded",
+              "failed"
+            ]
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
           }
         }
       },
-      "NewPayouts": {
+      "NewAlexandria": {
+        "required": [
+          "Title",
+          "Description"
+        ],
         "properties": {
-          "paypal_email": {
+          "Title": {
             "type": "string"
           },
-          "artist": {
+          "Description": {
             "type": "string"
+          },
+          "Source_URL": {
+            "type": "string"
+          },
+          "Source": {
+            "type": "string"
+          },
+          "CID": {
+            "type": "string"
+          },
+          "Status": {
+            "type": "string",
+            "default": "under_review",
+            "enum": [
+              "under_review",
+              "uploaded",
+              "failed"
+            ]
           },
           "published_at": {
             "type": "string",
@@ -6968,69 +4639,24 @@
           }
         }
       },
-      "Sale-methods": {
+      "Departments": {
         "required": [
-          "id",
-          "name",
-          "description"
+          "id"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "name": {
+          "Name": {
             "type": "string"
           },
-          "description": {
+          "Desciption": {
             "type": "string"
           },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
-          }
-        }
-      },
-      "NewSale-methods": {
-        "required": [
-          "name",
-          "description"
-        ],
-        "properties": {
-          "name": {
+          "Website": {
             "type": "string"
           },
-          "description": {
-            "type": "string"
-          },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "created_by": {
-            "type": "string"
-          },
-          "updated_by": {
-            "type": "string"
-          }
-        }
-      },
-      "Types": {
-        "required": [
-          "id",
-          "name",
-          "description"
-        ],
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
-          "icon": {
+          "Cover": {
             "required": [
               "id",
               "name",
@@ -7097,23 +4723,236 @@
               }
             }
           },
+          "Icon": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "Aletheias": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "Title",
+                "Description"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Title": {
+                  "type": "string"
+                },
+                "Description": {
+                  "type": "string"
+                },
+                "Year": {
+                  "type": "component"
+                },
+                "Status": {
+                  "type": "string",
+                  "enum": [
+                    "under_review",
+                    "approved",
+                    "blocked"
+                  ]
+                },
+                "Department": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
           }
         }
       },
-      "NewTypes": {
+      "NewDepartments": {
+        "properties": {
+          "Name": {
+            "type": "string"
+          },
+          "Desciption": {
+            "type": "string"
+          },
+          "Website": {
+            "type": "string"
+          },
+          "Aletheias": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
+          }
+        }
+      },
+      "Sources": {
         "required": [
-          "name",
-          "description"
+          "id"
         ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "alexandrias": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "Title",
+                "Description",
+                "File"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Title": {
+                  "type": "string"
+                },
+                "Description": {
+                  "type": "string"
+                },
+                "File": {
+                  "type": "string"
+                },
+                "Source_URL": {
+                  "type": "string"
+                },
+                "Source": {
+                  "type": "string"
+                },
+                "CID": {
+                  "type": "string"
+                },
+                "Status": {
+                  "type": "string",
+                  "enum": [
+                    "under_review",
+                    "uploaded",
+                    "failed"
+                  ]
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "NewSources": {
         "properties": {
           "name": {
             "type": "string"
           },
-          "description": {
+          "url": {
             "type": "string"
+          },
+          "alexandrias": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",
@@ -7414,19 +5253,16 @@
   },
   "tags": [
     {
-      "name": "Artist"
+      "name": "Aletheia"
     },
     {
-      "name": "Categories"
+      "name": "Alexandria"
     },
     {
-      "name": "Items"
+      "name": "Departments"
     },
     {
-      "name": "Payouts"
-    },
-    {
-      "name": "Types"
+      "name": "Sources"
     },
     {
       "name": "Email - Email"

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/alexandrias",
+      "handler": "alexandria.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/alexandrias/count",
+      "handler": "alexandria.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/alexandrias/:id",
+      "handler": "alexandria.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/alexandrias",
+      "handler": "alexandria.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/alexandrias/:id",
+      "handler": "alexandria.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/alexandrias/:id",
+      "handler": "alexandria.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

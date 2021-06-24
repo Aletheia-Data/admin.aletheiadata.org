@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "aletheias",
+  "info": {
+    "name": "Aletheia",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "Year": {
+      "type": "component",
+      "repeatable": false,
+      "component": "settings.years",
+      "required": false
+    },
+    "Status": {
+      "type": "enumeration",
+      "enum": [
+        "under_review",
+        "approved",
+        "blocked"
+      ],
+      "default": "under_review"
+    },
+    "Department": {
+      "via": "Aletheias",
+      "model": "departments"
+    }
+  }
+}

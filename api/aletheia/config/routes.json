@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/aletheias",
+      "handler": "aletheia.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/aletheias/count",
+      "handler": "aletheia.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/aletheias/:id",
+      "handler": "aletheia.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/aletheias",
+      "handler": "aletheia.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/aletheias/:id",
+      "handler": "aletheia.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/aletheias/:id",
+      "handler": "aletheia.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "alexandrias",
+  "info": {
+    "name": "Alexandria",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "File": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "Source_URL": {
+      "type": "string"
+    },
+    "Source": {
+      "model": "sources",
+      "via": "alexandrias"
+    },
+    "CID": {
+      "type": "string"
+    },
+    "Status": {
+      "type": "enumeration",
+      "enum": [
+        "under_review",
+        "uploaded",
+        "failed"
+      ],
+      "default": "under_review"
+    }
+  }
+}
