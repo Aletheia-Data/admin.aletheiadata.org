@@ -534,8 +534,7 @@
               "required": [
                 "id",
                 "title",
-                "description",
-                "file"
+                "description"
               ],
               "properties": {
                 "id": {
@@ -545,9 +544,6 @@
                   "type": "string"
                 },
                 "description": {
-                  "type": "string"
-                },
-                "file": {
                   "type": "string"
                 },
                 "source_url": {
@@ -566,6 +562,9 @@
                     "uploaded",
                     "failed"
                   ]
+                },
+                "department": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"

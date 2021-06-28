@@ -48,6 +48,10 @@
     "aletheias": {
       "via": "department",
       "collection": "aletheia"
+    },
+    "alexandrias": {
+      "via": "department",
+      "collection": "alexandria"
     }
   }
 }

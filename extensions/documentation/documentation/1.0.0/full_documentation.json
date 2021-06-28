@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/24/2021 8:43:34 PM"
+    "x-generation-date": "06/28/2021 6:35:32 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4372,6 +4372,12 @@
                   "type": "string"
                 }
               },
+              "alexandrias": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "published_at": {
                 "type": "string"
               },
@@ -4445,8 +4451,7 @@
         "required": [
           "id",
           "title",
-          "description",
-          "file"
+          "description"
         ],
         "properties": {
           "id": {
@@ -4457,73 +4462,6 @@
           },
           "description": {
             "type": "string"
-          },
-          "file": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "alternativeText": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
           },
           "source_url": {
             "type": "string"
@@ -4571,6 +4509,52 @@
               "failed"
             ]
           },
+          "department": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "desciption": {
+                "type": "string"
+              },
+              "website": {
+                "type": "string"
+              },
+              "cover": {
+                "type": "string"
+              },
+              "icon": {
+                "type": "string"
+              },
+              "aletheias": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "alexandrias": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -4606,6 +4590,9 @@
               "uploaded",
               "failed"
             ]
+          },
+          "department": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -4817,6 +4804,56 @@
               }
             }
           },
+          "alexandrias": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "title",
+                "description"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "source_url": {
+                  "type": "string"
+                },
+                "source": {
+                  "type": "string"
+                },
+                "cid": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "under_review",
+                    "uploaded",
+                    "failed"
+                  ]
+                },
+                "department": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -4835,6 +4872,12 @@
             "type": "string"
           },
           "aletheias": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "alexandrias": {
             "type": "array",
             "items": {
               "type": "string"
@@ -4872,8 +4915,7 @@
               "required": [
                 "id",
                 "title",
-                "description",
-                "file"
+                "description"
               ],
               "properties": {
                 "id": {
@@ -4883,9 +4925,6 @@
                   "type": "string"
                 },
                 "description": {
-                  "type": "string"
-                },
-                "file": {
                   "type": "string"
                 },
                 "source_url": {
@@ -4904,6 +4943,9 @@
                     "uploaded",
                     "failed"
                   ]
+                },
+                "department": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"

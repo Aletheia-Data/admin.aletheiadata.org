@@ -518,8 +518,7 @@
         "required": [
           "id",
           "title",
-          "description",
-          "file"
+          "description"
         ],
         "properties": {
           "id": {
@@ -530,73 +529,6 @@
           },
           "description": {
             "type": "string"
-          },
-          "file": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "alternativeText": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
           },
           "source_url": {
             "type": "string"
@@ -644,6 +576,52 @@
               "failed"
             ]
           },
+          "department": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "desciption": {
+                "type": "string"
+              },
+              "website": {
+                "type": "string"
+              },
+              "cover": {
+                "type": "string"
+              },
+              "icon": {
+                "type": "string"
+              },
+              "aletheias": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "alexandrias": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -679,6 +657,9 @@
               "uploaded",
               "failed"
             ]
+          },
+          "department": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

@@ -20,18 +20,6 @@
       "type": "text",
       "required": true
     },
-    "file": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": true,
-      "pluginOptions": {}
-    },
     "source_url": {
       "type": "string"
     },
@@ -50,6 +38,10 @@
         "failed"
       ],
       "default": "under_review"
+    },
+    "department": {
+      "model": "departments",
+      "via": "alexandrias"
     }
   }
 }

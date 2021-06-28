@@ -712,6 +712,56 @@
               }
             }
           },
+          "alexandrias": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "title",
+                "description"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "source_url": {
+                  "type": "string"
+                },
+                "source": {
+                  "type": "string"
+                },
+                "cid": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "under_review",
+                    "uploaded",
+                    "failed"
+                  ]
+                },
+                "department": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -730,6 +780,12 @@
             "type": "string"
           },
           "aletheias": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "alexandrias": {
             "type": "array",
             "items": {
               "type": "string"
