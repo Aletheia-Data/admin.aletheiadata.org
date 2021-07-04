@@ -750,6 +750,14 @@
                 "department": {
                   "type": "string"
                 },
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "pdf",
+                    "csv",
+                    "xls"
+                  ]
+                },
                 "published_at": {
                   "type": "string"
                 },

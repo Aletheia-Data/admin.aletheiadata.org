@@ -42,6 +42,14 @@
     "department": {
       "model": "departments",
       "via": "alexandrias"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "pdf",
+        "csv",
+        "xls"
+      ]
     }
   }
 }
