@@ -50,6 +50,25 @@
         "csv",
         "xls"
       ]
+    },
+    "api_enabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "api_endpoint": {
+      "type": "string"
+    },
+    "File": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }

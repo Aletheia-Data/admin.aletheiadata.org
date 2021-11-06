@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "07/04/2021 8:31:41 PM"
+    "x-generation-date": "11/06/2021 1:40:41 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4563,6 +4563,83 @@
               "xls"
             ]
           },
+          "api_enabled": {
+            "type": "boolean",
+            "default": false
+          },
+          "api_endpoint": {
+            "type": "string"
+          },
+          "File": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "hash",
+                "mime",
+                "size",
+                "url",
+                "provider"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "alternativeText": {
+                  "type": "string"
+                },
+                "caption": {
+                  "type": "string"
+                },
+                "width": {
+                  "type": "integer"
+                },
+                "height": {
+                  "type": "integer"
+                },
+                "formats": {
+                  "type": "object"
+                },
+                "hash": {
+                  "type": "string"
+                },
+                "ext": {
+                  "type": "string"
+                },
+                "mime": {
+                  "type": "string"
+                },
+                "size": {
+                  "type": "number"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "previewUrl": {
+                  "type": "string"
+                },
+                "provider": {
+                  "type": "string"
+                },
+                "provider_metadata": {
+                  "type": "object"
+                },
+                "related": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -4609,6 +4686,13 @@
               "csv",
               "xls"
             ]
+          },
+          "api_enabled": {
+            "type": "boolean",
+            "default": false
+          },
+          "api_endpoint": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -4866,6 +4950,18 @@
                     "xls"
                   ]
                 },
+                "api_enabled": {
+                  "type": "boolean"
+                },
+                "api_endpoint": {
+                  "type": "string"
+                },
+                "File": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -4978,6 +5074,18 @@
                     "csv",
                     "xls"
                   ]
+                },
+                "api_enabled": {
+                  "type": "boolean"
+                },
+                "api_endpoint": {
+                  "type": "string"
+                },
+                "File": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"

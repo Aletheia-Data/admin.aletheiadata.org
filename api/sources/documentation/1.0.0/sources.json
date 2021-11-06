@@ -574,6 +574,18 @@
                     "xls"
                   ]
                 },
+                "api_enabled": {
+                  "type": "boolean"
+                },
+                "api_endpoint": {
+                  "type": "string"
+                },
+                "File": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "published_at": {
                   "type": "string"
                 },
