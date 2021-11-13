@@ -770,6 +770,9 @@
                     "type": "string"
                   }
                 },
+                "Proof": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
