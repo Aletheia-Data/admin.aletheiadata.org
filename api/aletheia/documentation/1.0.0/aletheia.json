@@ -516,18 +516,10 @@
     "schemas": {
       "Aletheia": {
         "required": [
-          "id",
-          "title",
-          "description"
+          "id"
         ],
         "properties": {
           "id": {
-            "type": "string"
-          },
-          "title": {
-            "type": "string"
-          },
-          "description": {
             "type": "string"
           },
           "status": {
@@ -535,13 +527,19 @@
             "default": "under_review",
             "enum": [
               "under_review",
-              "approved",
-              "blocked"
+              "uploaded",
+              "failed"
             ]
           },
-          "department": {
+          "proof": {
             "required": [
-              "id"
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
             ],
             "properties": {
               "id": {
@@ -550,25 +548,119 @@
               "name": {
                 "type": "string"
               },
-              "desciption": {
+              "alternativeText": {
                 "type": "string"
               },
-              "website": {
+              "caption": {
                 "type": "string"
               },
-              "cover": {
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
                 "type": "string"
               },
-              "icon": {
+              "ext": {
                 "type": "string"
               },
-              "aletheias": {
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "alexandria": {
+            "required": [
+              "id",
+              "title",
+              "description"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "source_url": {
+                "type": "string"
+              },
+              "source": {
+                "type": "string"
+              },
+              "cid": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "under_review",
+                  "uploaded",
+                  "failed"
+                ]
+              },
+              "department": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "pdf",
+                  "csv",
+                  "xls"
+                ]
+              },
+              "api_enabled": {
+                "type": "boolean"
+              },
+              "api_endpoint": {
+                "type": "string"
+              },
+              "file": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
               },
-              "alexandrias": {
+              "proof": {
+                "type": "string"
+              },
+              "wallet_address": {
+                "type": "string"
+              },
+              "aletheias": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -585,13 +677,14 @@
               }
             }
           },
-          "start_date": {
+          "condition": {
             "type": "string",
-            "format": "date"
-          },
-          "end_date": {
-            "type": "string",
-            "format": "date"
+            "enum": [
+              "available",
+              "blocked",
+              "removed",
+              "other"
+            ]
           },
           "published_at": {
             "type": "string",
@@ -600,36 +693,27 @@
         }
       },
       "NewAletheia": {
-        "required": [
-          "title",
-          "description"
-        ],
         "properties": {
-          "title": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
           "status": {
             "type": "string",
             "default": "under_review",
             "enum": [
               "under_review",
-              "approved",
-              "blocked"
+              "uploaded",
+              "failed"
             ]
           },
-          "department": {
+          "alexandria": {
             "type": "string"
           },
-          "start_date": {
+          "condition": {
             "type": "string",
-            "format": "date"
-          },
-          "end_date": {
-            "type": "string",
-            "format": "date"
+            "enum": [
+              "available",
+              "blocked",
+              "removed",
+              "other"
+            ]
           },
           "published_at": {
             "type": "string",

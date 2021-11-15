@@ -665,53 +665,6 @@
               }
             }
           },
-          "aletheias": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "title",
-                "description"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "title": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
-                "status": {
-                  "type": "string",
-                  "enum": [
-                    "under_review",
-                    "approved",
-                    "blocked"
-                  ]
-                },
-                "department": {
-                  "type": "string"
-                },
-                "start_date": {
-                  "type": "string"
-                },
-                "end_date": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "alexandrias": {
             "type": "array",
             "items": {
@@ -764,14 +717,23 @@
                 "api_endpoint": {
                   "type": "string"
                 },
-                "File": {
+                "file": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
                 },
-                "Proof": {
+                "proof": {
                   "type": "string"
+                },
+                "wallet_address": {
+                  "type": "string"
+                },
+                "aletheias": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"
@@ -801,12 +763,6 @@
           },
           "website": {
             "type": "string"
-          },
-          "aletheias": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           },
           "alexandrias": {
             "type": "array",

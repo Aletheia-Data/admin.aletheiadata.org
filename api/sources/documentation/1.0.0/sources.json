@@ -580,14 +580,23 @@
                 "api_endpoint": {
                   "type": "string"
                 },
-                "File": {
+                "file": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
                 },
-                "Proof": {
+                "proof": {
                   "type": "string"
+                },
+                "wallet_address": {
+                  "type": "string"
+                },
+                "aletheias": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"

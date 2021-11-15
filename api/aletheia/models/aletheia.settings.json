@@ -12,32 +12,39 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string",
-      "required": true
-    },
-    "description": {
-      "type": "text",
-      "required": true
-    },
     "status": {
       "type": "enumeration",
       "enum": [
         "under_review",
-        "approved",
-        "blocked"
+        "uploaded",
+        "failed"
       ],
       "default": "under_review"
     },
-    "department": {
-      "via": "aletheias",
-      "model": "departments"
+    "proof": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     },
-    "start_date": {
-      "type": "date"
+    "alexandria": {
+      "model": "alexandria",
+      "via": "aletheias"
     },
-    "end_date": {
-      "type": "date"
+    "condition": {
+      "type": "enumeration",
+      "enum": [
+        "available",
+        "blocked",
+        "removed",
+        "other"
+      ]
     }
   }
 }

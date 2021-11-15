@@ -58,7 +58,7 @@
     "api_endpoint": {
       "type": "string"
     },
-    "File": {
+    "file": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -70,7 +70,7 @@
       "required": false,
       "pluginOptions": {}
     },
-    "Proof": {
+    "proof": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -81,6 +81,13 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "wallet_address": {
+      "type": "string"
+    },
+    "aletheias": {
+      "via": "alexandria",
+      "collection": "aletheia"
     }
   }
 }

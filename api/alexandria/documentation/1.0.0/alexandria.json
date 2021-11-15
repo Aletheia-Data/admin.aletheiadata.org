@@ -599,12 +599,6 @@
               "icon": {
                 "type": "string"
               },
-              "aletheias": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "alexandrias": {
                 "type": "array",
                 "items": {
@@ -637,7 +631,7 @@
           "api_endpoint": {
             "type": "string"
           },
-          "File": {
+          "file": {
             "type": "array",
             "items": {
               "required": [
@@ -707,7 +701,7 @@
               }
             }
           },
-          "Proof": {
+          "proof": {
             "required": [
               "id",
               "name",
@@ -774,6 +768,54 @@
               }
             }
           },
+          "wallet_address": {
+            "type": "string"
+          },
+          "aletheias": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "under_review",
+                    "uploaded",
+                    "failed"
+                  ]
+                },
+                "proof": {
+                  "type": "string"
+                },
+                "alexandria": {
+                  "type": "string"
+                },
+                "condition": {
+                  "type": "string",
+                  "enum": [
+                    "available",
+                    "blocked",
+                    "removed",
+                    "other"
+                  ]
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -827,6 +869,15 @@
           },
           "api_endpoint": {
             "type": "string"
+          },
+          "wallet_address": {
+            "type": "string"
+          },
+          "aletheias": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",
