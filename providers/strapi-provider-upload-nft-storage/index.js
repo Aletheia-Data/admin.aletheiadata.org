@@ -5,20 +5,18 @@
  */
 
 // Public node modules.
-const IPFS = require('ipfs')
-
-var _nft = require("nft.storage");
-
-const apiKey = process.env.NFT_STORAGE_API_KEY;
-const client = new _nft.NFTStorage({
-  token: apiKey
-});
+const _nft = require("nft.storage");
 
 /* eslint-disable no-unused-vars */
 module.exports = {
   provider: 'nft-storage',
   name: 'Strapi NFT Storage',
-  init: (config) => {
+  init: (config) => { 
+    
+    const client = new _nft.NFTStorage({
+      token: config.apiKey
+    });
+
     return {
       upload: async (file) => {
         
