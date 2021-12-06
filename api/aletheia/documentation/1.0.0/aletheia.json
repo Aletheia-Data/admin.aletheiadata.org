@@ -626,9 +626,9 @@
               "status": {
                 "type": "string",
                 "enum": [
+                  "on_line",
                   "under_review",
-                  "uploaded",
-                  "failed"
+                  "refused"
                 ]
               },
               "department": {
@@ -639,7 +639,8 @@
                 "enum": [
                   "pdf",
                   "csv",
-                  "xls"
+                  "xls",
+                  "other"
                 ]
               },
               "api_enabled": {

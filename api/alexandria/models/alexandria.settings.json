@@ -24,8 +24,8 @@
       "type": "string"
     },
     "source": {
-      "model": "sources",
-      "via": "alexandrias"
+      "via": "alexandrias",
+      "model": "sources"
     },
     "cid": {
       "type": "string"
@@ -33,9 +33,9 @@
     "status": {
       "type": "enumeration",
       "enum": [
+        "on_line",
         "under_review",
-        "uploaded",
-        "failed"
+        "refused"
       ],
       "default": "under_review"
     },
@@ -48,7 +48,8 @@
       "enum": [
         "pdf",
         "csv",
-        "xls"
+        "xls",
+        "other"
       ]
     },
     "api_enabled": {
