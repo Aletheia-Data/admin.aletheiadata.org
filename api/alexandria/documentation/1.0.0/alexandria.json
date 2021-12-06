@@ -635,7 +635,7 @@
             "enum": [
               "pdf",
               "csv",
-              "xls",
+              "xlsx",
               "other"
             ]
           },
@@ -831,6 +831,56 @@
               }
             }
           },
+          "import": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "source": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "single",
+                  "collection",
+                  "special"
+                ]
+              },
+              "documents": {
+                "type": "integer"
+              },
+              "walet": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "starting",
+                  "in_progress",
+                  "done"
+                ]
+              },
+              "alexandrias": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -875,7 +925,7 @@
             "enum": [
               "pdf",
               "csv",
-              "xls",
+              "xlsx",
               "other"
             ]
           },
@@ -894,6 +944,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "import": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

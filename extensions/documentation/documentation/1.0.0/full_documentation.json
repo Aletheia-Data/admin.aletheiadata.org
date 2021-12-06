@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/06/2021 9:39:52 AM"
+    "x-generation-date": "12/06/2021 6:41:16 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5465,7 +5465,7 @@
                 "enum": [
                   "pdf",
                   "csv",
-                  "xls",
+                  "xlsx",
                   "other"
                 ]
               },
@@ -5492,6 +5492,9 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "import": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"
@@ -5675,7 +5678,7 @@
             "enum": [
               "pdf",
               "csv",
-              "xls",
+              "xlsx",
               "other"
             ]
           },
@@ -5871,6 +5874,56 @@
               }
             }
           },
+          "import": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "source": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "single",
+                  "collection",
+                  "special"
+                ]
+              },
+              "documents": {
+                "type": "integer"
+              },
+              "walet": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "starting",
+                  "in_progress",
+                  "done"
+                ]
+              },
+              "alexandrias": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -5915,7 +5968,7 @@
             "enum": [
               "pdf",
               "csv",
-              "xls",
+              "xlsx",
               "other"
             ]
           },
@@ -5934,6 +5987,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "import": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -6321,7 +6377,7 @@
                   "enum": [
                     "pdf",
                     "csv",
-                    "xls",
+                    "xlsx",
                     "other"
                   ]
                 },
@@ -6348,6 +6404,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "import": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -6429,6 +6488,92 @@
               "done"
             ]
           },
+          "alexandrias": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "title",
+                "description"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "source_url": {
+                  "type": "string"
+                },
+                "source": {
+                  "type": "string"
+                },
+                "cid": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "on_line",
+                    "under_review",
+                    "refused"
+                  ]
+                },
+                "department": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "pdf",
+                    "csv",
+                    "xlsx",
+                    "other"
+                  ]
+                },
+                "api_enabled": {
+                  "type": "boolean"
+                },
+                "api_endpoint": {
+                  "type": "string"
+                },
+                "file": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "proof": {
+                  "type": "string"
+                },
+                "wallet_address": {
+                  "type": "string"
+                },
+                "aletheias": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "import": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -6461,6 +6606,12 @@
               "in_progress",
               "done"
             ]
+          },
+          "alexandrias": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",
@@ -6531,7 +6682,7 @@
                   "enum": [
                     "pdf",
                     "csv",
-                    "xls",
+                    "xlsx",
                     "other"
                   ]
                 },
@@ -6558,6 +6709,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "import": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"

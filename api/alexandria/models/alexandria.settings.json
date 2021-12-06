@@ -48,7 +48,7 @@
       "enum": [
         "pdf",
         "csv",
-        "xls",
+        "xlsx",
         "other"
       ]
     },
@@ -89,6 +89,10 @@
     "aletheias": {
       "via": "alexandria",
       "collection": "aletheia"
+    },
+    "import": {
+      "via": "alexandrias",
+      "model": "imports"
     }
   }
 }

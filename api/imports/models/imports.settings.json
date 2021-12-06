@@ -36,6 +36,10 @@
         "in_progress",
         "done"
       ]
+    },
+    "alexandrias": {
+      "collection": "alexandria",
+      "via": "import"
     }
   }
 }

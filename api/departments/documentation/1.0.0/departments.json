@@ -708,7 +708,7 @@
                   "enum": [
                     "pdf",
                     "csv",
-                    "xls",
+                    "xlsx",
                     "other"
                   ]
                 },
@@ -735,6 +735,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "import": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
