@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/06/2021 6:41:16 PM"
+    "x-generation-date": "12/07/2021 10:09:02 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5496,6 +5496,9 @@
               "import": {
                 "type": "string"
               },
+              "category": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -5924,6 +5927,46 @@
               }
             }
           },
+          "category": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "cover": {
+                "type": "string"
+              },
+              "enabled": {
+                "type": "boolean"
+              },
+              "icon": {
+                "type": "string"
+              },
+              "alexandrias": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -5989,6 +6032,9 @@
             }
           },
           "import": {
+            "type": "string"
+          },
+          "category": {
             "type": "string"
           },
           "published_at": {
@@ -6154,6 +6200,95 @@
               }
             }
           },
+          "alexandrias": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "title",
+                "description"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "source_url": {
+                  "type": "string"
+                },
+                "source": {
+                  "type": "string"
+                },
+                "cid": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "on_line",
+                    "under_review",
+                    "refused"
+                  ]
+                },
+                "department": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "pdf",
+                    "csv",
+                    "xlsx",
+                    "other"
+                  ]
+                },
+                "api_enabled": {
+                  "type": "boolean"
+                },
+                "api_endpoint": {
+                  "type": "string"
+                },
+                "file": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "proof": {
+                  "type": "string"
+                },
+                "wallet_address": {
+                  "type": "string"
+                },
+                "aletheias": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "import": {
+                  "type": "string"
+                },
+                "category": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -6170,6 +6305,12 @@
           },
           "enabled": {
             "type": "boolean"
+          },
+          "alexandrias": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",
@@ -6408,6 +6549,9 @@
                 "import": {
                   "type": "string"
                 },
+                "category": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -6562,6 +6706,9 @@
                 "import": {
                   "type": "string"
                 },
+                "category": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -6711,6 +6858,9 @@
                   }
                 },
                 "import": {
+                  "type": "string"
+                },
+                "category": {
                   "type": "string"
                 },
                 "published_at": {

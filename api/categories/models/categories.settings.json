@@ -44,6 +44,10 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "alexandrias": {
+      "collection": "alexandria",
+      "via": "category"
     }
   }
 }

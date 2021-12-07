@@ -665,6 +665,95 @@
               }
             }
           },
+          "alexandrias": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "title",
+                "description"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "source_url": {
+                  "type": "string"
+                },
+                "source": {
+                  "type": "string"
+                },
+                "cid": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "on_line",
+                    "under_review",
+                    "refused"
+                  ]
+                },
+                "department": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "pdf",
+                    "csv",
+                    "xlsx",
+                    "other"
+                  ]
+                },
+                "api_enabled": {
+                  "type": "boolean"
+                },
+                "api_endpoint": {
+                  "type": "string"
+                },
+                "file": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "proof": {
+                  "type": "string"
+                },
+                "wallet_address": {
+                  "type": "string"
+                },
+                "aletheias": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "import": {
+                  "type": "string"
+                },
+                "category": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -681,6 +770,12 @@
           },
           "enabled": {
             "type": "boolean"
+          },
+          "alexandrias": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

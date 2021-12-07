@@ -881,6 +881,46 @@
               }
             }
           },
+          "category": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "cover": {
+                "type": "string"
+              },
+              "enabled": {
+                "type": "boolean"
+              },
+              "icon": {
+                "type": "string"
+              },
+              "alexandrias": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -946,6 +986,9 @@
             }
           },
           "import": {
+            "type": "string"
+          },
+          "category": {
             "type": "string"
           },
           "published_at": {

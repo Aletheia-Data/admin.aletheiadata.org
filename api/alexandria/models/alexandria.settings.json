@@ -93,6 +93,10 @@
     "import": {
       "via": "alexandrias",
       "model": "imports"
+    },
+    "category": {
+      "via": "alexandrias",
+      "model": "categories"
     }
   }
 }

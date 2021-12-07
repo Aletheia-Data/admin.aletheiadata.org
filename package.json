@@ -11,7 +11,6 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "strapi-provider-upload-nft-storage": "0.0.2",
     "knex": "0.21.18",
     "nft.storage": "^3.3.0",
     "sqlite3": "5.0.0",
@@ -30,6 +29,8 @@
     "strapi-provider-email-amazon-ses": "^3.6.3",
     "strapi-provider-upload-aws-s3": "^3.6.3",
     "strapi-provider-upload-ipfs": "0.0.2",
+    "strapi-provider-upload-nft-storage": "0.0.2",
+    "strapi-provider-upload-web3-storage": "0.0.6",
     "strapi-utils": "3.6.3"
   },
   "author": {
