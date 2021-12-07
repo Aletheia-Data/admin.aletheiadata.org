@@ -24,8 +24,8 @@
       "type": "string"
     },
     "source": {
-      "model": "sources",
-      "via": "alexandrias"
+      "via": "alexandrias",
+      "model": "sources"
     },
     "cid": {
       "type": "string"
@@ -33,9 +33,9 @@
     "status": {
       "type": "enumeration",
       "enum": [
+        "on_line",
         "under_review",
-        "uploaded",
-        "failed"
+        "refused"
       ],
       "default": "under_review"
     },
@@ -48,7 +48,8 @@
       "enum": [
         "pdf",
         "csv",
-        "xls"
+        "xlsx",
+        "other"
       ]
     },
     "api_enabled": {
@@ -88,6 +89,17 @@
     "aletheias": {
       "via": "alexandria",
       "collection": "aletheia"
+    },
+    "import": {
+      "via": "alexandrias",
+      "model": "imports"
+    },
+    "category": {
+      "via": "alexandrias",
+      "model": "categories"
+    },
+    "original_url": {
+      "type": "string"
     }
   }
 }

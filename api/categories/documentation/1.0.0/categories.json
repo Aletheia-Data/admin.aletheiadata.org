@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/alexandrias": {
+    "/categories": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find all the categories's records",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve categories document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Alexandria"
+                    "$ref": "#/components/schemas/Categories"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Alexandria"
+          "Categories"
         ],
         "parameters": [
           {
@@ -194,14 +194,14 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new record",
+        "description": "Create a new categories record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve categories document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Alexandria"
+                  "$ref": "#/components/schemas/Categories"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Alexandria"
+          "Categories"
         ],
         "requestBody": {
           "description": "",
@@ -247,20 +247,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewAlexandria"
+                "$ref": "#/components/schemas/NewCategories"
               }
             }
           }
         }
       }
     },
-    "/alexandrias/count": {
+    "/categories/count": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Retrieve the numver of categories documents",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve categories document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -306,22 +306,22 @@
         },
         "summary": "",
         "tags": [
-          "Alexandria"
+          "Categories"
         ],
         "parameters": []
       }
     },
-    "/alexandrias/{id}": {
+    "/categories/{id}": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find one categories record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve categories document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Alexandria"
+                  "$ref": "#/components/schemas/Categories"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Alexandria"
+          "Categories"
         ],
         "parameters": [
           {
@@ -376,14 +376,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a record",
+        "description": "Update a single categories record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve categories document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Alexandria"
+                  "$ref": "#/components/schemas/Categories"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Alexandria"
+          "Categories"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewAlexandria"
+                "$ref": "#/components/schemas/NewCategories"
               }
             }
           }
@@ -449,10 +449,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a record",
+        "description": "Delete a single categories record",
         "responses": {
           "200": {
-            "description": "deletes a single record based on the ID supplied",
+            "description": "deletes a single categories based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Alexandria"
+          "Categories"
         ],
         "parameters": [
           {
@@ -514,11 +514,9 @@
   },
   "components": {
     "schemas": {
-      "Alexandria": {
+      "Categories": {
         "required": [
-          "id",
-          "title",
-          "description"
+          "id"
         ],
         "properties": {
           "id": {
@@ -530,193 +528,7 @@
           "description": {
             "type": "string"
           },
-          "source_url": {
-            "type": "string"
-          },
-          "source": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "url": {
-                "type": "string"
-              },
-              "alexandrias": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "cover": {
-                "type": "string"
-              },
-              "icon": {
-                "type": "string"
-              },
-              "status": {
-                "type": "string",
-                "enum": [
-                  "on_line",
-                  "under_review",
-                  "refused"
-                ]
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "cid": {
-            "type": "string"
-          },
-          "status": {
-            "type": "string",
-            "default": "under_review",
-            "enum": [
-              "on_line",
-              "under_review",
-              "refused"
-            ]
-          },
-          "department": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "desciption": {
-                "type": "string"
-              },
-              "website": {
-                "type": "string"
-              },
-              "cover": {
-                "type": "string"
-              },
-              "icon": {
-                "type": "string"
-              },
-              "alexandrias": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "type": {
-            "type": "string",
-            "enum": [
-              "pdf",
-              "csv",
-              "xlsx",
-              "other"
-            ]
-          },
-          "api_enabled": {
-            "type": "boolean",
-            "default": false
-          },
-          "api_endpoint": {
-            "type": "string"
-          },
-          "file": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "name",
-                "hash",
-                "mime",
-                "size",
-                "url",
-                "provider"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "alternativeText": {
-                  "type": "string"
-                },
-                "caption": {
-                  "type": "string"
-                },
-                "width": {
-                  "type": "integer"
-                },
-                "height": {
-                  "type": "integer"
-                },
-                "formats": {
-                  "type": "object"
-                },
-                "hash": {
-                  "type": "string"
-                },
-                "ext": {
-                  "type": "string"
-                },
-                "mime": {
-                  "type": "string"
-                },
-                "size": {
-                  "type": "number"
-                },
-                "url": {
-                  "type": "string"
-                },
-                "previewUrl": {
-                  "type": "string"
-                },
-                "provider": {
-                  "type": "string"
-                },
-                "provider_metadata": {
-                  "type": "object"
-                },
-                "related": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "proof": {
+          "cover": {
             "required": [
               "id",
               "name",
@@ -783,41 +595,155 @@
               }
             }
           },
-          "wallet_address": {
-            "type": "string"
+          "enabled": {
+            "type": "boolean"
           },
-          "aletheias": {
+          "icon": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "alexandrias": {
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "title",
+                "description"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
+                "title": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "source_url": {
+                  "type": "string"
+                },
+                "source": {
+                  "type": "string"
+                },
+                "cid": {
+                  "type": "string"
+                },
                 "status": {
                   "type": "string",
                   "enum": [
+                    "on_line",
                     "under_review",
-                    "uploaded",
-                    "failed"
+                    "refused"
                   ]
+                },
+                "department": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "pdf",
+                    "csv",
+                    "xlsx",
+                    "other"
+                  ]
+                },
+                "api_enabled": {
+                  "type": "boolean"
+                },
+                "api_endpoint": {
+                  "type": "string"
+                },
+                "file": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "proof": {
                   "type": "string"
                 },
-                "alexandria": {
+                "wallet_address": {
                   "type": "string"
                 },
-                "condition": {
-                  "type": "string",
-                  "enum": [
-                    "available",
-                    "blocked",
-                    "removed",
-                    "other"
-                  ]
+                "aletheias": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "import": {
+                  "type": "string"
+                },
+                "category": {
+                  "type": "string"
+                },
+                "original_url": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -831,110 +757,13 @@
               }
             }
           },
-          "import": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "source": {
-                "type": "string"
-              },
-              "type": {
-                "type": "string",
-                "enum": [
-                  "single",
-                  "collection",
-                  "special"
-                ]
-              },
-              "documents": {
-                "type": "integer"
-              },
-              "wallet": {
-                "type": "string"
-              },
-              "status": {
-                "type": "string",
-                "enum": [
-                  "starting",
-                  "in_progress",
-                  "done"
-                ]
-              },
-              "alexandrias": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "category": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "title": {
-                "type": "string"
-              },
-              "description": {
-                "type": "string"
-              },
-              "cover": {
-                "type": "string"
-              },
-              "enabled": {
-                "type": "boolean"
-              },
-              "icon": {
-                "type": "string"
-              },
-              "alexandrias": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "original_url": {
-            "type": "string"
-          },
           "published_at": {
             "type": "string",
             "format": "date-time"
           }
         }
       },
-      "NewAlexandria": {
-        "required": [
-          "title",
-          "description"
-        ],
+      "NewCategories": {
         "properties": {
           "title": {
             "type": "string"
@@ -942,60 +771,14 @@
           "description": {
             "type": "string"
           },
-          "source_url": {
-            "type": "string"
+          "enabled": {
+            "type": "boolean"
           },
-          "source": {
-            "type": "string"
-          },
-          "cid": {
-            "type": "string"
-          },
-          "status": {
-            "type": "string",
-            "default": "under_review",
-            "enum": [
-              "on_line",
-              "under_review",
-              "refused"
-            ]
-          },
-          "department": {
-            "type": "string"
-          },
-          "type": {
-            "type": "string",
-            "enum": [
-              "pdf",
-              "csv",
-              "xlsx",
-              "other"
-            ]
-          },
-          "api_enabled": {
-            "type": "boolean",
-            "default": false
-          },
-          "api_endpoint": {
-            "type": "string"
-          },
-          "wallet_address": {
-            "type": "string"
-          },
-          "aletheias": {
+          "alexandrias": {
             "type": "array",
             "items": {
               "type": "string"
             }
-          },
-          "import": {
-            "type": "string"
-          },
-          "category": {
-            "type": "string"
-          },
-          "original_url": {
-            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -1013,7 +796,7 @@
   },
   "tags": [
     {
-      "name": "Alexandria"
+      "name": "Categories"
     }
   ]
 }

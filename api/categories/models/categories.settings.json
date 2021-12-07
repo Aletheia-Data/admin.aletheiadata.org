@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "sources",
+  "collectionName": "categories",
   "info": {
-    "name": "Sources",
+    "name": "Categories",
     "description": ""
   },
   "options": {
@@ -12,16 +12,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "title": {
       "type": "string"
     },
-    "url": {
-      "type": "string",
-      "unique": true
-    },
-    "alexandrias": {
-      "via": "source",
-      "collection": "alexandria"
+    "description": {
+      "type": "text"
     },
     "cover": {
       "model": "file",
@@ -35,6 +30,9 @@
       "required": false,
       "pluginOptions": {}
     },
+    "enabled": {
+      "type": "boolean"
+    },
     "icon": {
       "model": "file",
       "via": "related",
@@ -47,13 +45,9 @@
       "required": false,
       "pluginOptions": {}
     },
-    "status": {
-      "type": "enumeration",
-      "enum": [
-        "on_line",
-        "under_review",
-        "refused"
-      ]
+    "alexandrias": {
+      "via": "category",
+      "collection": "alexandria"
     }
   }
 }

@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "imports",
+  "info": {
+    "name": "Imports",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "source": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "single",
+        "collection",
+        "special"
+      ]
+    },
+    "documents": {
+      "type": "biginteger"
+    },
+    "wallet": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "starting",
+        "in_progress",
+        "done"
+      ]
+    },
+    "alexandrias": {
+      "via": "import",
+      "collection": "alexandria"
+    }
+  }
+}

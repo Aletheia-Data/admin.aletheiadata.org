@@ -695,9 +695,9 @@
                 "status": {
                   "type": "string",
                   "enum": [
+                    "on_line",
                     "under_review",
-                    "uploaded",
-                    "failed"
+                    "refused"
                   ]
                 },
                 "department": {
@@ -708,7 +708,8 @@
                   "enum": [
                     "pdf",
                     "csv",
-                    "xls"
+                    "xlsx",
+                    "other"
                   ]
                 },
                 "api_enabled": {
@@ -734,6 +735,15 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "import": {
+                  "type": "string"
+                },
+                "category": {
+                  "type": "string"
+                },
+                "original_url": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"

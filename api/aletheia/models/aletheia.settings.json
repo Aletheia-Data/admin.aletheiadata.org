@@ -34,8 +34,8 @@
       "pluginOptions": {}
     },
     "alexandria": {
-      "model": "alexandria",
-      "via": "aletheias"
+      "via": "aletheias",
+      "model": "alexandria"
     },
     "condition": {
       "type": "enumeration",
