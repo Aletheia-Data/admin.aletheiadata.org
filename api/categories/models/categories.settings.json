@@ -46,8 +46,8 @@
       "pluginOptions": {}
     },
     "alexandrias": {
-      "collection": "alexandria",
-      "via": "category"
+      "via": "category",
+      "collection": "alexandria"
     }
   }
 }

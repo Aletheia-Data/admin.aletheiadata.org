@@ -605,6 +605,9 @@
                 "category": {
                   "type": "string"
                 },
+                "original_url": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },

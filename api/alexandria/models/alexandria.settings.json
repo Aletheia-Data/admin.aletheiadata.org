@@ -97,6 +97,9 @@
     "category": {
       "via": "alexandrias",
       "model": "categories"
+    },
+    "original_url": {
+      "type": "string"
     }
   }
 }

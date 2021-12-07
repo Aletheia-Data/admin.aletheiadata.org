@@ -853,7 +853,7 @@
               "documents": {
                 "type": "integer"
               },
-              "walet": {
+              "wallet": {
                 "type": "string"
               },
               "status": {
@@ -920,6 +920,9 @@
                 "type": "string"
               }
             }
+          },
+          "original_url": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -989,6 +992,9 @@
             "type": "string"
           },
           "category": {
+            "type": "string"
+          },
+          "original_url": {
             "type": "string"
           },
           "published_at": {

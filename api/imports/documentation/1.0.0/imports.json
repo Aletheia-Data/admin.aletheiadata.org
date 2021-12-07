@@ -536,7 +536,7 @@
           "documents": {
             "type": "integer"
           },
-          "walet": {
+          "wallet": {
             "type": "string"
           },
           "status": {
@@ -624,6 +624,9 @@
                 "category": {
                   "type": "string"
                 },
+                "original_url": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -658,7 +661,7 @@
           "documents": {
             "type": "integer"
           },
-          "walet": {
+          "wallet": {
             "type": "string"
           },
           "status": {

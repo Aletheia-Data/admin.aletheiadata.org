@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/07/2021 10:09:02 AM"
+    "x-generation-date": "12/07/2021 12:26:55 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5499,6 +5499,9 @@
               "category": {
                 "type": "string"
               },
+              "original_url": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -5899,7 +5902,7 @@
               "documents": {
                 "type": "integer"
               },
-              "walet": {
+              "wallet": {
                 "type": "string"
               },
               "status": {
@@ -5966,6 +5969,9 @@
                 "type": "string"
               }
             }
+          },
+          "original_url": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -6035,6 +6041,9 @@
             "type": "string"
           },
           "category": {
+            "type": "string"
+          },
+          "original_url": {
             "type": "string"
           },
           "published_at": {
@@ -6275,6 +6284,9 @@
                   "type": "string"
                 },
                 "category": {
+                  "type": "string"
+                },
+                "original_url": {
                   "type": "string"
                 },
                 "published_at": {
@@ -6552,6 +6564,9 @@
                 "category": {
                   "type": "string"
                 },
+                "original_url": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -6621,7 +6636,7 @@
           "documents": {
             "type": "integer"
           },
-          "walet": {
+          "wallet": {
             "type": "string"
           },
           "status": {
@@ -6709,6 +6724,9 @@
                 "category": {
                   "type": "string"
                 },
+                "original_url": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -6743,7 +6761,7 @@
           "documents": {
             "type": "integer"
           },
-          "walet": {
+          "wallet": {
             "type": "string"
           },
           "status": {
@@ -6861,6 +6879,9 @@
                   "type": "string"
                 },
                 "category": {
+                  "type": "string"
+                },
+                "original_url": {
                   "type": "string"
                 },
                 "published_at": {
