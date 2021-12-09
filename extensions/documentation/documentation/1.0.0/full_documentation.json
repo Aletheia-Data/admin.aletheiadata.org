@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/07/2021 3:52:38 PM"
+    "x-generation-date": "12/08/2021 12:31:32 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5454,7 +5454,8 @@
                 "enum": [
                   "on_line",
                   "under_review",
-                  "refused"
+                  "blocked",
+                  "broken"
                 ]
               },
               "department": {
@@ -5636,7 +5637,8 @@
             "enum": [
               "on_line",
               "under_review",
-              "refused"
+              "blocked",
+              "broken"
             ]
           },
           "department": {
@@ -6006,7 +6008,8 @@
             "enum": [
               "on_line",
               "under_review",
-              "refused"
+              "blocked",
+              "broken"
             ]
           },
           "department": {
@@ -6241,7 +6244,8 @@
                   "enum": [
                     "on_line",
                     "under_review",
-                    "refused"
+                    "blocked",
+                    "broken"
                   ]
                 },
                 "department": {
@@ -6519,7 +6523,8 @@
                   "enum": [
                     "on_line",
                     "under_review",
-                    "refused"
+                    "blocked",
+                    "broken"
                   ]
                 },
                 "department": {
@@ -6679,7 +6684,8 @@
                   "enum": [
                     "on_line",
                     "under_review",
-                    "refused"
+                    "blocked",
+                    "broken"
                   ]
                 },
                 "department": {
@@ -6836,7 +6842,8 @@
                   "enum": [
                     "on_line",
                     "under_review",
-                    "refused"
+                    "blocked",
+                    "broken"
                   ]
                 },
                 "department": {

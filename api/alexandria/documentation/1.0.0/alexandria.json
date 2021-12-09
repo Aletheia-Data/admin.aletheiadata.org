@@ -587,7 +587,8 @@
             "enum": [
               "on_line",
               "under_review",
-              "refused"
+              "blocked",
+              "broken"
             ]
           },
           "department": {
@@ -957,7 +958,8 @@
             "enum": [
               "on_line",
               "under_review",
-              "refused"
+              "blocked",
+              "broken"
             ]
           },
           "department": {

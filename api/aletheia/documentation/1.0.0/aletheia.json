@@ -628,7 +628,8 @@
                 "enum": [
                   "on_line",
                   "under_review",
-                  "refused"
+                  "blocked",
+                  "broken"
                 ]
               },
               "department": {
