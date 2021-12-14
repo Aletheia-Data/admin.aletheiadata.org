@@ -50,6 +50,7 @@
         "pdf",
         "csv",
         "xlsx",
+        "ods",
         "other"
       ]
     },
@@ -100,6 +101,9 @@
       "model": "categories"
     },
     "original_url": {
+      "type": "string"
+    },
+    "ext": {
       "type": "string"
     }
   }

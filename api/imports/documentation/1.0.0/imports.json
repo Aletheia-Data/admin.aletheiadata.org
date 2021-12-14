@@ -592,6 +592,7 @@
                     "pdf",
                     "csv",
                     "xlsx",
+                    "ods",
                     "other"
                   ]
                 },
@@ -628,6 +629,9 @@
                 "original_url": {
                   "type": "string"
                 },
+                "ext": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -639,6 +643,15 @@
                 }
               }
             }
+          },
+          "download_errors": {
+            "type": "object"
+          },
+          "docs_imported": {
+            "type": "object"
+          },
+          "download_errors_count": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -678,6 +691,15 @@
             "items": {
               "type": "string"
             }
+          },
+          "download_errors": {
+            "type": "object"
+          },
+          "docs_imported": {
+            "type": "object"
+          },
+          "download_errors_count": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",

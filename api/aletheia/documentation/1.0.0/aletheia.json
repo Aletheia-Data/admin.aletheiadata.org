@@ -641,6 +641,7 @@
                   "pdf",
                   "csv",
                   "xlsx",
+                  "ods",
                   "other"
                 ]
               },
@@ -675,6 +676,9 @@
                 "type": "string"
               },
               "original_url": {
+                "type": "string"
+              },
+              "ext": {
                 "type": "string"
               },
               "published_at": {
