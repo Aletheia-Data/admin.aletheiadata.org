@@ -40,6 +40,15 @@
     "alexandrias": {
       "via": "import",
       "collection": "alexandria"
+    },
+    "download_errors": {
+      "type": "json"
+    },
+    "docs_imported": {
+      "type": "json"
+    },
+    "download_errors_count": {
+      "type": "biginteger"
     }
   }
 }
