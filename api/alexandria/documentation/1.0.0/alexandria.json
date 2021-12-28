@@ -567,6 +567,9 @@
                   "refused"
                 ]
               },
+              "description": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },

@@ -767,6 +767,9 @@
               "refused"
             ]
           },
+          "description": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -794,6 +797,9 @@
               "under_review",
               "refused"
             ]
+          },
+          "description": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

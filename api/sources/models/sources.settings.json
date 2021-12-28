@@ -54,6 +54,9 @@
         "under_review",
         "refused"
       ]
+    },
+    "description": {
+      "type": "text"
     }
   }
 }
