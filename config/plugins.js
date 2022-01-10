@@ -1,8 +1,8 @@
 module.exports = ({ env }) => ({
     upload: {
-      provider: 'nft-storage',
+      provider: 'web3-storage',
       providerOptions: {
-        apiKey: env('NFT_STORAGE_API_KEY')
+        apiKey: env('WEB3_STORAGE_API_KEY')
       },
     },
     email: {
