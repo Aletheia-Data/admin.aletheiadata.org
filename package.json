@@ -9,7 +9,9 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "web3.storage": "^3.5.3"
+  },
   "dependencies": {
     "knex": "0.21.18",
     "nft.storage": "^3.3.0",
