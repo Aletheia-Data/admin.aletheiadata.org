@@ -1,7 +1,7 @@
 {
   "name": "AdminAletheia",
   "private": true,
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Aletheia Data Admin",
   "scripts": {
     "develop": "strapi develop",
@@ -9,7 +9,6 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
     "knex": "0.21.18",
     "nft.storage": "^3.3.0",
@@ -30,9 +29,9 @@
     "strapi-provider-upload-aws-s3": "^3.6.3",
     "strapi-provider-upload-ipfs": "0.0.2",
     "strapi-provider-upload-nft-storage": "0.0.2",
-    "strapi-provider-upload-web3-storage": "0.0.6",
+    "strapi-provider-upload-web3-storage": "^0.1.1",
     "strapi-utils": "3.6.3",
-    "web3.storage": "^4.2.0"
+    "web3.storage": "^3.5.3"
   },
   "author": {
     "name": "Aletheia Dev Team"
