@@ -9,9 +9,7 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {
-    "web3.storage": "^3.5.3"
-  },
+  "devDependencies": {},
   "dependencies": {
     "knex": "0.21.18",
     "nft.storage": "^3.3.0",
@@ -33,7 +31,8 @@
     "strapi-provider-upload-ipfs": "0.0.2",
     "strapi-provider-upload-nft-storage": "0.0.2",
     "strapi-provider-upload-web3-storage": "0.0.6",
-    "strapi-utils": "3.6.3"
+    "strapi-utils": "3.6.3",
+    "web3.storage": "^4.2.0"
   },
   "author": {
     "name": "Aletheia Dev Team"
