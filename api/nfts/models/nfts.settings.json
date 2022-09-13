@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nfts",
+  "info": {
+    "name": "Nfts"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cid": {
+      "type": "string"
+    },
+    "txReceipt": {
+      "type": "json"
+    }
+  }
+}
