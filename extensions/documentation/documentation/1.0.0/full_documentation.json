@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/12/2022 6:12:07 PM"
+    "x-generation-date": "09/18/2022 1:02:59 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6018,6 +6018,12 @@
               "ext": {
                 "type": "string"
               },
+              "nfts": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "published_at": {
                 "type": "string"
               },
@@ -6506,6 +6512,37 @@
           "ext": {
             "type": "string"
           },
+          "nfts": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "cid": {
+                  "type": "string"
+                },
+                "txReceipt": {
+                  "type": "object"
+                },
+                "asset": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -6583,6 +6620,12 @@
           },
           "ext": {
             "type": "string"
+          },
+          "nfts": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",
@@ -6831,6 +6874,12 @@
                 },
                 "ext": {
                   "type": "string"
+                },
+                "nfts": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"
@@ -7115,6 +7164,12 @@
                 "ext": {
                   "type": "string"
                 },
+                "nfts": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -7280,6 +7335,12 @@
                 "ext": {
                   "type": "string"
                 },
+                "nfts": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -7375,6 +7436,106 @@
           "txReceipt": {
             "type": "object"
           },
+          "asset": {
+            "required": [
+              "id",
+              "title",
+              "description"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "source_url": {
+                "type": "string"
+              },
+              "source": {
+                "type": "string"
+              },
+              "cid": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "on_line",
+                  "under_review",
+                  "blocked",
+                  "broken"
+                ]
+              },
+              "department": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "pdf",
+                  "csv",
+                  "xlsx",
+                  "ods",
+                  "other"
+                ]
+              },
+              "api_enabled": {
+                "type": "boolean"
+              },
+              "api_endpoint": {
+                "type": "string"
+              },
+              "file": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "proof": {
+                "type": "string"
+              },
+              "wallet_address": {
+                "type": "string"
+              },
+              "aletheias": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "import": {
+                "type": "string"
+              },
+              "category": {
+                "type": "string"
+              },
+              "original_url": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "nfts": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -7388,6 +7549,9 @@
           },
           "txReceipt": {
             "type": "object"
+          },
+          "asset": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -7499,6 +7663,12 @@
                 },
                 "ext": {
                   "type": "string"
+                },
+                "nfts": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"

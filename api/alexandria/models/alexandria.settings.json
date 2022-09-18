@@ -105,6 +105,10 @@
     },
     "ext": {
       "type": "string"
+    },
+    "nfts": {
+      "via": "asset",
+      "collection": "nfts"
     }
   }
 }
